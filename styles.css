@@ -959,13 +959,13 @@ header.scrolled {
     .nav-menu {
         display: none;
         position: absolute;
-        top: 80px;
+        top: 66px;
         left: 0;
         right: 0;
         background-color: var(--black);
         flex-direction: column;
-        padding: 24px;
-        gap: 16px;
+        padding: 16px 24px;
+        gap: 12px;
         box-shadow: var(--shadow-lg);
     }
 
