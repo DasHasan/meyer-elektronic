@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MYR - Meyer Elektronic GER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,9 +33,24 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="https://via.placeholder.com/400x300/000000/FFFFFF?text=MYR+LOGO" alt="MYR Meyer Elektronic GER">
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="https://via.placeholder.com/500x200/000000/FFFFFF?text=MYR" alt="MYR Logo">
+                </div>
+                <h1 class="hero-title">Meyer Elektronic GER</h1>
+                <p class="hero-subtitle">Ihr Experte für moderne Elektrotechnik seit über 20 Jahren</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Termin vereinbaren</a>
+                    <a href="#about" class="btn btn-outline">Mehr erfahren</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
@@ -44,64 +62,98 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
+            <div class="section-header">
+                <span class="section-label">Über uns</span>
+                <h2 class="section-title">Ihr Partner für Elektrotechnik</h2>
+                <p class="section-description">Qualität, Erfahrung und Zuverlässigkeit seit über zwei Jahrzehnten</p>
+            </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/500x350/cccccc/000000?text=Firmengebäude" alt="Firmengebäude">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/600x450/f5f5f5/666666?text=Firmengebäude" alt="Firmengebäude">
+                        <div class="image-badge">
+                            <span class="badge-number">20+</span>
+                            <span class="badge-text">Jahre Erfahrung</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-text">
-                    <h2>ÜBER UNS</h2>
-                    <p>
-                        Wir sind ein mittelständisches Unternehmen mit Sitz in Deutschland.
-                        Seit über 20 Jahren sind wir Ihr kompetenter Partner für alle
-                        Elektroinstallationen im privaten und gewerblichen Bereich.
-                    </p>
-                    <p>
-                        Unser erfahrenes Team steht Ihnen mit Rat und Tat zur Seite -
-                        von der Planung über die Ausführung bis hin zur Wartung.
-                        Vertrauen Sie auf unsere Kompetenz und Zuverlässigkeit.
-                    </p>
-                    <p>
-                        Kundenzufriedenheit steht bei uns an erster Stelle. Deshalb legen
-                        wir großen Wert auf Qualität, Termintreue und faire Preise.
-                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Kompetenz & Erfahrung</h3>
+                                <p>Seit über 20 Jahren sind wir Ihr kompetenter Partner für alle Elektroinstallationen im privaten und gewerblichen Bereich.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Rundum-Service</h3>
+                                <p>Unser erfahrenes Team steht Ihnen mit Rat und Tat zur Seite - von der Planung über die Ausführung bis hin zur Wartung.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Kundenzufriedenheit</h3>
+                                <p>Qualität, Termintreue und faire Preise stehen bei uns an erster Stelle. Ihre Zufriedenheit ist unser Erfolg.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Icons Section -->
-    <section class="services-intro">
+    <section class="services-intro" id="services">
         <div class="container">
-            <h2>Unsere Leistungen auf einen Blick</h2>
+            <div class="section-header centered">
+                <span class="section-label">Unsere Stärken</span>
+                <h2 class="section-title">Warum MYR wählen?</h2>
+            </div>
             <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon red-circle">
-                        <svg viewBox="0 0 24 24" fill="white" width="40" height="40">
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
                         </svg>
                     </div>
                     <h3>Sicherheit</h3>
-                    <p>Höchste Sicherheitsstandards bei allen Installationen</p>
+                    <p>Höchste Sicherheitsstandards bei allen Installationen. Zertifizierte Fachkräfte garantieren sichere Arbeit.</p>
                 </div>
-                <div class="service-item">
-                    <div class="service-icon red-circle">
-                        <svg viewBox="0 0 24 24" fill="white" width="40" height="40">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
                     <h3>Qualität</h3>
-                    <p>Erstklassige Materialien und fachgerechte Ausführung</p>
+                    <p>Erstklassige Materialien und fachgerechte Ausführung für langlebige Lösungen.</p>
                 </div>
-                <div class="service-item">
-                    <div class="service-icon red-circle">
-                        <svg viewBox="0 0 24 24" fill="white" width="40" height="40">
-                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
                     <h3>Schnelligkeit</h3>
-                    <p>Termingerechte Ausführung aller Arbeiten</p>
+                    <p>Termingerechte Ausführung aller Arbeiten ohne Kompromisse bei der Qualität.</p>
                 </div>
             </div>
         </div>
@@ -118,64 +170,92 @@
     <!-- Detailed Services Section -->
     <section class="detailed-services">
         <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Leistungen</span>
+                <h2 class="section-title">Unsere Services</h2>
+                <p class="section-description">Professionelle Elektrolösungen für jeden Bedarf</p>
+            </div>
             <div class="services-grid-detailed">
-                <div class="service-detail">
-                    <div class="service-icon-large">
-                        <svg viewBox="0 0 24 24" fill="#c41e3a" width="50" height="50">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                <div class="service-detail-card">
+                    <div class="service-detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
                         </svg>
                     </div>
                     <h3>Beratung</h3>
-                    <p>Kompetente und unverbindliche Beratung für Ihr Projekt</p>
+                    <p>Kompetente und unverbindliche Beratung für Ihr Projekt. Wir analysieren Ihre Anforderungen und entwickeln maßgeschneiderte Lösungen.</p>
                 </div>
-                <div class="service-detail">
-                    <div class="service-icon-large">
-                        <svg viewBox="0 0 24 24" fill="#c41e3a" width="50" height="50">
-                            <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/>
+                <div class="service-detail-card">
+                    <div class="service-detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                         </svg>
                     </div>
                     <h3>Planung</h3>
-                    <p>Detaillierte Planung und Konzeption Ihrer Elektroinstallation</p>
+                    <p>Detaillierte Planung und Konzeption Ihrer Elektroinstallation. Von der Skizze bis zum fertigen Plan.</p>
                 </div>
-                <div class="service-detail">
-                    <div class="service-icon-large">
-                        <svg viewBox="0 0 24 24" fill="#c41e3a" width="50" height="50">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
+                <div class="service-detail-card">
+                    <div class="service-detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Installation</h3>
+                    <p>Professionelle Installation aller elektrischen Systeme. Fachgerecht, sicher und termingerecht.</p>
+                </div>
+                <div class="service-detail-card">
+                    <div class="service-detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
                         </svg>
                     </div>
                     <h3>Wartung</h3>
-                    <p>Regelmäßige Wartung und Instandhaltung</p>
-                </div>
-                <div class="service-detail">
-                    <div class="service-icon-large">
-                        <svg viewBox="0 0 24 24" fill="#c41e3a" width="50" height="50">
-                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                        </svg>
-                    </div>
-                    <h3>Privatkunden</h3>
-                    <p>Elektroinstallationen für Ihr Zuhause</p>
+                    <p>Regelmäßige Wartung und Instandhaltung. Wir sorgen dafür, dass Ihre Anlagen zuverlässig funktionieren.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Form Section -->
-    <section class="contact-form-section">
+    <section class="contact-form-section" id="contact">
         <div class="container">
-            <h2>KONTAKTFORMULAR</h2>
+            <div class="section-header centered">
+                <span class="section-label">Kontakt</span>
+                <h2 class="section-title">Kontaktformular</h2>
+                <p class="section-description">Wir freuen uns auf Ihre Anfrage</p>
+            </div>
             <form class="contact-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Vorname" required>
-                    <input type="text" placeholder="Nachname" required>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="vorname">Vorname</label>
+                        <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nachname">Nachname</label>
+                        <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required>
+                    </div>
                 </div>
-                <div class="form-row">
-                    <input type="email" placeholder="E-Mail" required>
-                    <input type="tel" placeholder="Telefon">
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon">Telefon</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="+49 123 456789">
+                    </div>
                 </div>
-                <div class="form-row">
-                    <textarea placeholder="Ihre Nachricht" rows="5" required></textarea>
+                <div class="form-group">
+                    <label for="nachricht">Ihre Nachricht</label>
+                    <textarea id="nachricht" name="nachricht" placeholder="Beschreiben Sie Ihr Anliegen..." rows="6" required></textarea>
                 </div>
-                <button type="submit" class="submit-button">ABSENDEN</button>
+                <button type="submit" class="submit-button">
+                    <span>Absenden</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </button>
             </form>
         </div>
     </section>
@@ -183,25 +263,41 @@
     <!-- Team Section -->
     <section class="team-section">
         <div class="container">
-            <h2>UNSER TEAM</h2>
+            <div class="section-header centered">
+                <span class="section-label">Team</span>
+                <h2 class="section-title">Unser Team</h2>
+                <p class="section-description">Erfahrene Profis für Ihr Projekt</p>
+            </div>
             <div class="team-grid">
-                <div class="team-member">
-                    <img src="https://via.placeholder.com/200x200/cccccc/000000?text=Team+Member" alt="Team Member">
-                    <h3>Max Mustermann</h3>
-                    <p class="position">Geschäftsführer</p>
-                    <button class="team-button">MEHR ERFAHREN</button>
+                <div class="team-member-card">
+                    <div class="team-member-image">
+                        <img src="https://via.placeholder.com/300x300/f5f5f5/666666?text=MM" alt="Max Mustermann">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Max Mustermann</h3>
+                        <p class="position">Geschäftsführer</p>
+                        <button class="team-button">Mehr erfahren</button>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <img src="https://via.placeholder.com/200x200/cccccc/000000?text=Team+Member" alt="Team Member">
-                    <h3>Erika Musterfrau</h3>
-                    <p class="position">Projektleiterin</p>
-                    <button class="team-button">MEHR ERFAHREN</button>
+                <div class="team-member-card">
+                    <div class="team-member-image">
+                        <img src="https://via.placeholder.com/300x300/f5f5f5/666666?text=EM" alt="Erika Musterfrau">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Erika Musterfrau</h3>
+                        <p class="position">Projektleiterin</p>
+                        <button class="team-button">Mehr erfahren</button>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <img src="https://via.placeholder.com/200x200/cccccc/000000?text=Team+Member" alt="Team Member">
-                    <h3>Hans Schmidt</h3>
-                    <p class="position">Elektromeister</p>
-                    <button class="team-button">MEHR ERFAHREN</button>
+                <div class="team-member-card">
+                    <div class="team-member-image">
+                        <img src="https://via.placeholder.com/300x300/f5f5f5/666666?text=HS" alt="Hans Schmidt">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Hans Schmidt</h3>
+                        <p class="position">Elektromeister</p>
+                        <button class="team-button">Mehr erfahren</button>
+                    </div>
                 </div>
             </div>
         </div>
