@@ -1,0 +1,625 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #000;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #c41e3a;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #000;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-content img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+/* Red Banner */
+.red-banner {
+    background-color: #c41e3a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.red-banner h2 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #c41e3a;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Services Intro Section */
+.services-intro {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.services-intro h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-icon {
+    margin: 0 auto 20px;
+}
+
+.red-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #c41e3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Gray CTA Section */
+.cta-gray {
+    background-color: #e5e5e5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-gray h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.cta-button {
+    background-color: #c41e3a;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #a01729;
+}
+
+/* Detailed Services Section */
+.detailed-services {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.services-grid-detailed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.service-detail {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-icon-large {
+    margin-bottom: 20px;
+}
+
+.service-detail h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-detail p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.form-row textarea {
+    grid-column: 1 / -1;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #c41e3a;
+    color: #fff;
+    border: none;
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #a01729;
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.team-member {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-member .position {
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.team-button {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #c41e3a;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.team-button:hover {
+    background-color: #c41e3a;
+    color: #fff;
+}
+
+/* Location Section */
+.location-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.location-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.location-info h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #c41e3a;
+}
+
+.location-info .address,
+.location-info .contact-info,
+.location-info .opening-hours {
+    margin-bottom: 30px;
+}
+
+.location-info p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Red Wave Section */
+.red-wave {
+    background: linear-gradient(135deg, #c41e3a 0%, #8b1528 100%);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.red-wave::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"><path d="M0,50 Q300,0 600,50 T1200,50 L1200,100 L0,100 Z" fill="rgba(255,255,255,0.1)"/></svg>') repeat-x;
+    background-size: 1200px 100px;
+    opacity: 0.3;
+}
+
+.red-wave h2 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 20px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #c41e3a;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #c41e3a;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid-detailed {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .location-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .red-banner h2 {
+        font-size: 18px;
+    }
+
+    .red-wave h2 {
+        font-size: 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-content img {
+        max-width: 300px;
+    }
+
+    .about-section,
+    .services-intro,
+    .detailed-services,
+    .contact-form-section,
+    .team-section,
+    .location-section {
+        padding: 40px 15px;
+    }
+
+    .about-text h2,
+    .services-intro h2,
+    .contact-form-section h2,
+    .team-section h2,
+    .location-info h2 {
+        font-size: 24px;
+    }
+
+    .red-banner h2 {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .services-grid-detailed {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .red-wave h2 {
+        font-size: 20px;
+    }
+
+    .cta-gray h2 {
+        font-size: 20px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .red-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .red-circle svg {
+        width: 35px;
+        height: 35px;
+    }
+}
