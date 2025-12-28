@@ -788,11 +788,16 @@ header.scrolled {
     align-items: start;
 }
 
+.map iframe,
 .map img {
     width: 100%;
     height: auto;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-md);
+}
+
+.map iframe {
+    min-height: 450px;
 }
 
 .location-info h2 {

@@ -166,20 +166,23 @@ function initFormHandling() {
             return;
         }
 
-        // Simulate form submission
-        const submitButton = contactForm.querySelector('.submit-button');
-        const originalText = submitButton.querySelector('span').textContent;
+        // Create mailto link with form data
+        const recipient = 'info@meyer-elektronic-gbr.de';
+        const subject = `Kontaktanfrage von ${data.vorname} ${data.nachname}`;
+        const body = `Name: ${data.vorname} ${data.nachname}
+E-Mail: ${data.email}
+Telefon: ${data.telefon || 'Nicht angegeben'}
 
-        submitButton.disabled = true;
-        submitButton.querySelector('span').textContent = 'Wird gesendet...';
+Nachricht:
+${data.nachricht}`;
 
-        // Simulate API call
-        setTimeout(() => {
-            showNotification('Vielen Dank für Ihre Nachricht! Wir melden uns bald bei Ihnen.', 'success');
-            contactForm.reset();
-            submitButton.disabled = false;
-            submitButton.querySelector('span').textContent = originalText;
-        }, 1500);
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // Open mailto link
+        window.location.href = mailtoLink;
+
+        // Show success message
+        showNotification('Ihr E-Mail-Programm wird geöffnet.', 'success');
     });
 
     // Add focus/blur effects to form inputs
